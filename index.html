@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halloween Manor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- 
+Il faut l'implementer plus tard
+   <audio id="background-sound" src="sounds/background.mp3" loop></audio>
+    <audio id="end-game-sound" src="sounds/end-game.mp3"></audio> -->
+
+    <div class="background">
+        <div class="moon"></div>
+        <div class="graveyard">
+            <div class="gravestone"></div>
+            <div class="gravestone"></div>
+            <div class="gravestone"></div>
+        </div>
+        <div class="fog"></div>
+        <!-- Chauves-souris -->
+        <div class="bat" style="animation-delay: 0s;"></div>
+        <div class="bat" style="animation-delay: 5s;"></div>
+    </div>
+
+    <header>
+        <h1>Chasse les fantômes</h1>
+        <p>Chassez les fantômes avant qu'ils ne disparaissent !</p>
+        <div class="scoreboard">
+            <span>Score : <span id="score">0</span></span>
+            <span>Temps restant : <span id="time">30</span>s</span>
+        </div>
+        <div class="buttons">
+            <button id="start-button" class="btn">Commencer le Jeu</button>
+            <a href="https://hack.club/boba-manor" class="btn">Open the door</a>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <div class="game-area">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Hackclub manor</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
